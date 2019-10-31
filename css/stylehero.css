@@ -1,0 +1,15 @@
+#hero {
+    background: red;
+    width: 200px;
+    height: 200px;
+}
+
+#hero.enable {
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+    50% {
+        opacity: 0%;
+    }
+}
