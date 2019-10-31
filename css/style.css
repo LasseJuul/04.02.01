@@ -1,0 +1,18 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+.change {
+    animation: animate 1s infinite;
+}
+
+@keyframes animate {
+    50% {
+        transform: rotate(45deg);
+    }
+}
