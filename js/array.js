@@ -1,12 +1,12 @@
-let hobbies = ["running", "hopping", "crawling", "eating"]
+const listElements = document.querySelectorAll("li");
 
-hobbies.forEach(find); /*sets the forEach loop for 'each'*/
+listElements.forEach(displayIT); /*sets the forEach loop for 'each'*/
 
-function find(item, index) {
-    console.log(item, index);
+function displayIT(element) {
+    element.addEventListener("click", markIT);
 }
 
-console.log(hobbies[0]);
-console.log(hobbies.length);
-console.log(hobbies.length-1);
-console.log("index 1: " + hobbies[1])
+function markIT(){
+    console.log("clicked");
+    this.classList.toggle("mark")
+}

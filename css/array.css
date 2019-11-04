@@ -1,0 +1,8 @@
+ul {
+    cursor: pointer;
+}
+
+.mark {
+    background: coral;
+    color: white;
+}
