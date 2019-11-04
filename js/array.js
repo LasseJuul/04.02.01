@@ -1,24 +1,28 @@
-const listElements = document.querySelectorAll("img");
-const body = document.querySelector("body")
+const body = document.querySelector("body");
+const ul = document.querySelector("ul");
+const button = document.querySelector("button");
+const input = document.querySelector("input");
 
-listElements.forEach(displayIt);
+button.addEventListener("click", addItemToList);
 
-function displayIt(element) {
-    element.addEventListener("click", markIt);
+function addItemToList(){
+    const newLi = document.createElement("li");
+    console.log(newLi);
+    newLi.textContent=input.value;
+    newLi.addEventListener("click", markIt);
+    ul.appendChild(newLi);
 }
 
 let counter = 0;
-/*let img1Counter = 0;
-let img2Counter = 0;*/
 
 function markIt(){
     counter++;
+    this.removeEventListener('click', markIt);
     console.log(counter);
     if(counter == 2){
-        body.classList.add("change")
+        ul.classList.add("change")
     }
     this.classList.add("mark")
-    this.removeEventListener('click', markIt, false);
 }
 
 

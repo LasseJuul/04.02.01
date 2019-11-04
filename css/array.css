@@ -3,10 +3,10 @@ img {
 }
 
 .mark {
-    background: coral;
-    color: white;
+    text-decoration: line-through;
+    color: red;
 }
 
 .change {
-    background: red;
+    background: blue;
 }
