@@ -1,12 +1,26 @@
-const listElements = document.querySelectorAll("li");
+const listElements = document.querySelectorAll("img");
+const body = document.querySelector("body")
 
-listElements.forEach(displayIT); /*sets the forEach loop for 'each'*/
+listElements.forEach(displayIt);
 
-function displayIT(element) {
-    element.addEventListener("click", markIT);
+function displayIt(element) {
+    element.addEventListener("click", markIt);
 }
 
-function markIT(){
-    console.log("clicked");
-    this.classList.toggle("mark")
+let counter = 0;
+/*let img1Counter = 0;
+let img2Counter = 0;*/
+
+function markIt(){
+    counter++;
+    console.log(counter);
+    if(counter == 2){
+        body.classList.add("change")
+    }
+    this.classList.add("mark")
+    this.removeEventListener('click', markIt, false);
 }
+
+
+
+

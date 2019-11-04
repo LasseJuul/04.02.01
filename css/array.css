@@ -1,8 +1,12 @@
-ul {
+img {
     cursor: pointer;
 }
 
 .mark {
     background: coral;
     color: white;
+}
+
+.change {
+    background: red;
 }
