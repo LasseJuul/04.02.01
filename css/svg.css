@@ -1,0 +1,16 @@
+svg {
+    width: 90vh;
+}
+
+.line {
+    fill: none;
+    stroke: black;
+    stroke-width: 1;
+    stroke-dasharray: 101;
+    stroke-dashoffset: 101;
+    transition: .5s linear;
+}
+
+.draw {
+    stroke-dashoffset: 0;
+}
