@@ -1,0 +1,122 @@
+/*Leaf*/
+img {
+    width: 30vw;
+    height: auto;
+}
+
+/*Highlighted when clicked*/
+button:focus {
+    background-color: lightblue;
+}
+
+
+
+/*animation 1 - Rotate*/
+.rotate {
+    animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+    50% {
+        transform: rotate(90deg);
+    }
+}
+
+
+
+/*animation 2 - wave*/
+.wave {
+    animation: wave 1s infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/*animation 3 - move*/
+.move {
+    animation: move 3s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(10px);
+    }
+    25% {
+        transform: translate(30px);
+    }
+    50% {
+        transform: translate(50px);
+    }
+    75% {
+        transform: translate(30px);
+    }
+    100% {
+        transform: translate(10px);
+    }
+}
+
+/*animation 4 - invisible*/
+.invis {
+    animation: invis 2s infinite ease-in-out;
+}
+
+@keyframes invis {
+    0% {
+        opacity: 100;
+    }
+    25% {
+        opacity: 50;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 50;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+/*animation 5 - spin*/
+.spin {
+    animation: spin 2s infinite ease-in-out;
+}
+
+@keyframes spin {
+    10% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-400deg);
+    }
+    90% {
+        transform: rotate(20deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
